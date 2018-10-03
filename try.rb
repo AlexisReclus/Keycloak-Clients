@@ -148,8 +148,8 @@ def adapt_json(ligne)
 #delete the id because keycloak an id automatically
 	mydata.delete("id")
 #Fix some config for this specific client
-	mydata['clientId'] = "https://" + ligne +".jobreadyplus.com/jr/metadata"
-	mydata['redirectUris'] = ["https://" + ligne +".jobreadyplus.com/jr/consume"]
+	mydata['clientId'] = ligne
+	mydata['redirectUris'] = ligne
 #Write the new json in the mydata.json
 	open('mydata.json','w') { |f|
 		f.write(mydata.to_json)
