@@ -6,8 +6,8 @@ This files creates clients in keycloak:
 3. If you want to add a client using an url given in domain.txt file you can add  "\clientId\":ligne  in the Json.
 4. Make sure you have exported the username and password using the command line:
 ```
-export KEYCLOAK_USER = username
-export KEYCLOAK_PASSWORD = password
+export KEYCLOAK_USER=username
+export KEYCLOAK_PASSWORD=password
 ```
 5. You also have to change all the url in the curl requests.
 6. You can export a client from keycloak if you want to have a template to create the JSON.
