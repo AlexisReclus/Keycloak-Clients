@@ -26,8 +26,8 @@ This files extracted a client in your keycloak environment, use its Json configu
 2. In the domain.txt file, add clients name, one client per line.
 3. Make sure you have exported the username and password using the command line:
 ```
-export KEYCLOAK_USER = username
-export KEYCLOAK_PASSWORD = password
+export KEYCLOAK_USER=username
+export KEYCLOAK_PASSWORD=password
 ```
 4. run the script like this:
 ````
