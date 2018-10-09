@@ -1,3 +1,18 @@
+# config_clients.rb
+This files create client using an importation of the xml file
+1. Make sure you have exported the username and password using the command line:
+```
+export KEYCLOAK_USER=username
+export KEYCLOAK_PASSWORD=password
+```
+2. In the same folder, you can do ~ touch domain.txt and enter the urls for downloading the xml metadata.
+3. For each URL, the algorithm will import the xml config, create a JSON and import the JSON in Keycloak to create the application (if application already exists, the script is just going to update the app's configs).
+4. Run this algorithm:
+````
+ruby config_clients.rb
+````
+
+
 # firstfinished.rb
 
 This files creates clients in keycloak:
